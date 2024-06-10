@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,7 +10,7 @@ public class CharacterInteractController : MonoBehaviour
     [SerializeField] float offSetDistance = 1f;
     [SerializeField] float sizeOfInteractableArea = 1.2f;
     Character character;
-    [SerializeReference] HighlightController highlightController;
+    [SerializeField] HighlightController highlightController;
 
     private void Awake()
     {

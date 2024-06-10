@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f39ca79a3710ca4b8377fc6e62f2683, type: 3}
+  m_Script: {fileID: 11500000, guid: 8e9fc3916bac6324493db214e10eb588, type: 3}
   m_Name: SuperPlowAction
   m_EditorClassIdentifier: 
   canPlow:
-  - {fileID: 11400000, guid: ad1ff7d3e2eb9fd4aa30f1828f191107, type: 2}
-  - {fileID: 11400000, guid: cc815715241861b438ee3665b3ccefbb, type: 2}
+  - {fileID: 11400000, guid: deac7bb804bdccf45b2d00d194996ef3, type: 2}
+  - {fileID: 11400000, guid: 07f05531a8aaeba4198df974f17f311d, type: 2}

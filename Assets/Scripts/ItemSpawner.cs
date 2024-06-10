@@ -1,10 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.Progress;
 
-[RequireComponent(typeof(MonoBehaviour))]
-public class ItemSpawner : UnityEngine.MonoBehaviour
+[RequireComponent(typeof(TimeAgent))]
+public class ItemSpawner : MonoBehaviour
 {
     [SerializeField] Item toSpawn;
     [SerializeField] int count;
@@ -28,6 +27,6 @@ public class ItemSpawner : UnityEngine.MonoBehaviour
             position.y += spread * Random.value - spread / 2;
 
             ItemSpawnManager.instance.SpawnItem(position, toSpawn, count);
-        }  
+        }        
     }
 }

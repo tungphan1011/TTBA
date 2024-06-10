@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(PolygonCollider2D))]
 public class ResourceNode : ToolHit
 {
-    [SerializeField] GameObject pickUpDrop;   
+    [SerializeField] GameObject pickUpDrop;
     [SerializeField] float spread = 0.7f;
 
     [SerializeField] Item item;
@@ -26,7 +27,6 @@ public class ResourceNode : ToolHit
         }
 
         Destroy(gameObject);
-        Debug.Log("Tree Cutted");
     }
 
     public override bool CanBeHit(List<ResourceNodeType> canBeHit)

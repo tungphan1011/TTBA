@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
@@ -47,7 +46,7 @@ public class AudioManager : MonoBehaviour
 
     private AudioSource GetFreeAudioSource()
     {
-        for (int i = 0; i < audioSources.Count; i++) 
+        for (int i = 0; i < audioSources.Count;i++) 
         {
             if (audioSources[i].isPlaying == false)
             {

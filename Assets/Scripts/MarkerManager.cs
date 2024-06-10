@@ -22,7 +22,7 @@ public class MarkerManager : MonoBehaviour
 
     internal void Show(bool selectable)
     {
-        show = selectable;  
+        show = selectable;
         targetTilemap.gameObject.SetActive(show);
     }
 }

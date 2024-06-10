@@ -5,14 +5,13 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class ItemDragAndDropController : ItemSpawnManager
+public class ItemDragAndDropController : MonoBehaviour
 {
 
-    [SerializeField] ItemSlot itemSlot;
-    [SerializeField] UnityEngine.GameObject itemIcon;
+    public ItemSlot itemSlot;
+    [SerializeField] GameObject itemIcon;
     RectTransform iconTransform;
     Image itemIconImage;
-
 
     private void Start()
     {
@@ -31,39 +30,74 @@ public class ItemDragAndDropController : ItemSpawnManager
             {
                 if (EventSystem.current.IsPointerOverGameObject() == false)
                 {
+                    Vector3 worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                    worldPosition.z = 0;
 
-                        Vector3 worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                        worldPosition.z = 0;
-
-                        ItemSpawnManager.instance.SpawnItem(
-                            worldPosition,
-                            itemSlot.item,
-                            itemSlot.count
-                            );
-
-                        itemSlot.Clear();
-                        itemIcon.SetActive(false);
-
-                    Debug.Log("OK");
+                    ItemSpawnManager.instance.SpawnItem(
+                        worldPosition, 
+                        itemSlot.item, 
+                        itemSlot.count
+                        );
+                    itemSlot.Clear();
+                    itemIcon.SetActive(false);
                 }
-            } 
+            }   
         }
+    }
+
+    internal void RemoveItem(int count = 1)
+    {
+        if (itemSlot == null) { return; }
+
+        if (itemSlot.item.stackable)
+        {
+            itemSlot.count -= count;
+            if (itemSlot.count <= 0)
+            {
+                itemSlot.Clear();
+            }
+        }
+        else
+        {
+            itemSlot.Clear();
+        }
+        UpdateIcon();
+    }
+
+    public bool Check(Item item, int count = 1)
+    {
+        if (itemSlot == null) { return false; }
+
+        if (item.stackable)
+        {
+            return itemSlot.item == item && itemSlot.count >= count;
+        }
+
+        return itemSlot.item == item;
     }
 
     internal void OnClick(ItemSlot itemSlot)
     {
-        if (this.itemSlot == null)
+        if (this.itemSlot.item == null)
         {
             this.itemSlot.Copy(itemSlot);
             itemSlot.Clear();
         }
         else
         {
-            Item item = itemSlot.item;
-            int count = itemSlot.count;
+            if (itemSlot.item == this.itemSlot.item)
+            {
+                itemSlot.count += this.itemSlot.count;
+                this.itemSlot.Clear();
+            }
+            else
+            {
+                Item item = itemSlot.item;
+                int count = itemSlot.count;
 
-            itemSlot.Copy(this.itemSlot);
-            this.itemSlot.Set(item, count);
+                itemSlot.Copy(this.itemSlot);
+                this.itemSlot.Set(item, count);
+            }          
         }
         UpdateIcon();
     }

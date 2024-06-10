@@ -113,19 +113,19 @@ TextureImporter:
       name: Inner_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 384
-        width: 16
-        height: 16
-      alignment: 0
+        x: 80
+        y: 304
+        width: 32
+        height: 32
+      alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de28be8d5b5bc954c94b26e1eebab9d4
-      internalID: 1223930814
+      spriteID: 03d4266e446d88845be1999568454cd0
+      internalID: -80811557
       vertices: []
       indices: 
       edges: []
@@ -134,10 +134,10 @@ TextureImporter:
       name: Inner_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 368
-        width: 16
-        height: 16
+        x: 48
+        y: 240
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,8 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a169ba49718ab5245a05d5443a846082
-      internalID: -661203977
+      spriteID: e60982d309930f141b82d22acf82563d
+      internalID: -1987368049
       vertices: []
       indices: 
       edges: []
@@ -155,10 +155,10 @@ TextureImporter:
       name: Inner_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 352
-        width: 16
-        height: 16
+        x: 96
+        y: 336
+        width: 33
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27450c7f695f4a54e848bfe23d397bed
-      internalID: -1175301015
+      spriteID: 40b97530401c0764381adbc1a40c09d4
+      internalID: -1742476387
       vertices: []
       indices: 
       edges: []
@@ -176,10 +176,10 @@ TextureImporter:
       name: Inner_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 304
-        width: 64
-        height: 47
+        x: 129
+        y: 336
+        width: 31
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7b10bd4610915d43a832e849ecb187c
-      internalID: 395041950
+      spriteID: 8d7f9e2b17d08dd4eb61f0f7d7c2addc
+      internalID: -2029527886
       vertices: []
       indices: 
       edges: []
@@ -197,805 +197,7 @@ TextureImporter:
       name: Inner_4
       rect:
         serializedVersion: 2
-        x: 16
-        y: 351
-        width: 48
-        height: 49
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a05abc1588570c243ab160c67228b9ea
-      internalID: -795541494
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_5
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 368
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0e1eaa0c9d451bc4dab5c8f2ccd22f47
-      internalID: -229138076
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_6
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 352
-        width: 14
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5c12399c0ddcdb349a0016f32aefbc0a
-      internalID: -193934842
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_7
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 352
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 81365ca6cfe75464bb4ee6ec51f7fa2d
-      internalID: 2110090390
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_8
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 304
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5a201f367811263488dcc7488e776a25
-      internalID: 1717938054
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_9
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 291
-        width: 10
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: acf81c85bf50722418b3f41f8bc3d089
-      internalID: 197627820
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Carpet
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 240
-        width: 46
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d23a21bdbde20524c823a65bede618b9
-      internalID: 1123465200
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_11
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 208
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 36ca5092717c08749ae3141113ec2d57
-      internalID: -1166884076
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_12
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 218
-        width: 14
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e430b6abd5b80794a9d4ea92521e34ff
-      internalID: 1015888276
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_13
-      rect:
-        serializedVersion: 2
-        x: 49
-        y: 218
-        width: 14
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 17691ae17373f2f44a5ce4315cad1ddd
-      internalID: -1239862229
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_14
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 218
-        width: 14
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1da30f333d303df42aabbb0b5420a702
-      internalID: 714115201
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_15
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 163
-        width: 46
-        height: 43
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c993185124098644d84092e925ca4ad3
-      internalID: 909315149
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_16
-      rect:
-        serializedVersion: 2
-        x: 49
-        y: 179
-        width: 46
-        height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cf6ea14cc79905842ab1b2910d7c72c0
-      internalID: 644554490
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_17
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 208
-        width: 16
-        height: 49
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a68ba4acc5b95ba43a6a4c0d88072cc4
-      internalID: 284268489
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_18
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 256
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 66854600f55db1146897ee4d774698e7
-      internalID: -1565712248
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shelf_1
-      rect:
-        serializedVersion: 2
-        x: 97
-        y: 211
-        width: 46
-        height: 43
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5f6f2c46f47a1ad4ea0e44edc321fb32
-      internalID: 1951840852
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_20
-      rect:
-        serializedVersion: 2
-        x: 49
-        y: 160
-        width: 30
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 29ee67bcc88a96c498f4fe502f6c336b
-      internalID: 1193049481
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_21
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 000bca24b78691b47afa0ec190904220
-      internalID: 1932370737
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_22
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 112
-        width: 30
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 28a60617de51d9946a26bfd716373c6f
-      internalID: 1231659688
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_23
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 137
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6e2cbe405e6fe0c489035ae6c5f55000
-      internalID: -739158473
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_24
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 150
-        width: 32
-        height: 55
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 90f9fa3feb323c34782d8f9dbf8d0abc
-      internalID: -1531726893
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DecorTree
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 177
-        width: 14
-        height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c57089018fd05e34b912afeb773b845d
-      internalID: 1765578660
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_26
-      rect:
-        serializedVersion: 2
-        x: 148
-        y: 194
-        width: 9
-        height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 26b8a0781b7a13547ac7d205082a64df
-      internalID: 1360880200
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_27
-      rect:
-        serializedVersion: 2
-        x: 148
-        y: 209
-        width: 10
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4d284814ddbfb06459dfc876593073c5
-      internalID: -1539925627
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_28
-      rect:
-        serializedVersion: 2
-        x: 147
-        y: 225
-        width: 10
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 36eb9de6cb164904b8affd681f736295
-      internalID: -2027934059
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_29
-      rect:
-        serializedVersion: 2
-        x: 148
-        y: 242
-        width: 10
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f439753fb10575144912837262c11164
-      internalID: -2012367590
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_30
-      rect:
-        serializedVersion: 2
-        x: 131
-        y: 258
-        width: 11
-        height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: da784fe91d3a7f54d982413eb57d4593
-      internalID: 838898490
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_31
-      rect:
-        serializedVersion: 2
-        x: 130
-        y: 272
-        width: 28
-        height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: faaca5c29c4e8cf4c848ea8a8d23bd4a
-      internalID: 113205646
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shelf
-      rect:
-        serializedVersion: 2
-        x: 161
-        y: 245
-        width: 46
-        height: 42
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 942c559169c7d334ab7506a34b7b57c8
-      internalID: -727243155
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_33
-      rect:
-        serializedVersion: 2
-        x: 113
-        y: 304
-        width: 30
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d322e576c0e64514b8f535be53438261
-      internalID: 176051431
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_34
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 384
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 999a7e8c337eee34d8479e4714a9dad9
-      internalID: 2010571542
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_35
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 384
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9f061d10a2f887a48948fc148024174a
-      internalID: 596075927
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_36
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 384
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4c5a4ab7776c3a54aa0a6dccd988b72e
-      internalID: -1979627724
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_37
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 368
-        width: 31
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 12d93cdd8c6ff654fba0b452b18605de
-      internalID: -933625827
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_38
-      rect:
-        serializedVersion: 2
-        x: 127
-        y: 368
-        width: 17
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e817045b5cab8264f8c939d7ccfa685a
-      internalID: 1947787444
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_39
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 336
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b9954e9778c542c4ba1945091f109c40
-      internalID: 1980353350
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_40
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 336
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 221d72d7fca3b6e4a97f9657d03725f7
-      internalID: 1450922082
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_41
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 336
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed3c23bb4a4a2224496b8538db7d2e84
-      internalID: 2120341419
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_42
-      rect:
-        serializedVersion: 2
-        x: 161
+        x: 209
         y: 338
         width: 46
         height: 45
@@ -1006,308 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57d711877d2e00b45ba1f524d42608d0
-      internalID: -373986094
+      spriteID: 69c3e0d5cdd629542a5feee5e5f13ee3
+      internalID: 494164422
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Inner_43
-      rect:
-        serializedVersion: 2
-        x: 193
-        y: 331
-        width: 14
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: efd49714e4d74bb44a05d91db5de4f3c
-      internalID: 1802797671
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_44
-      rect:
-        serializedVersion: 2
-        x: 193
-        y: 315
-        width: 14
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 416ac10081bbab34b86273142cf7509b
-      internalID: 1806833401
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_45
-      rect:
-        serializedVersion: 2
-        x: 204
-        y: 305
-        width: 3
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7bde370b38af8f4468e8179a010e77e9
-      internalID: 1806804550
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chair
-      rect:
-        serializedVersion: 2
-        x: 209
-        y: 305
-        width: 14
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: da9abd66a98cb644d8337ce4ecc3a2f8
-      internalID: 46055356
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chair_1
-      rect:
-        serializedVersion: 2
-        x: 225
-        y: 304
-        width: 14
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 11fd177a91e7dd3478d1125db7d4d9bd
-      internalID: 1060117676
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chair_2
-      rect:
-        serializedVersion: 2
-        x: 241
-        y: 299
-        width: 14
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a82f6cf984890c24da5457c2c94b4237
-      internalID: -2147427393
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_49
-      rect:
-        serializedVersion: 2
-        x: 209
-        y: 339
-        width: 46
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 452efe4a99d58e246936f3a4dc5dc762
-      internalID: -1127940818
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_50
-      rect:
-        serializedVersion: 2
-        x: 145
-        y: 379
-        width: 14
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4e1e1713524d8be4899318dc59cada98
-      internalID: 2106503348
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_51
-      rect:
-        serializedVersion: 2
-        x: 161
-        y: 384
-        width: 15
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 50bed8167df5b6449b5a4a2738d6abcc
-      internalID: -887914120
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_52
-      rect:
-        serializedVersion: 2
-        x: 177
-        y: 395
-        width: 15
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: de9d8320204d08d4c94b054a98c713ba
-      internalID: -1226245890
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_53
-      rect:
-        serializedVersion: 2
-        x: 194
-        y: 386
-        width: 28
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7d8b8963563ce7043894f4a52fdc3ea1
-      internalID: -1593370173
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_54
-      rect:
-        serializedVersion: 2
-        x: 226
-        y: 385
-        width: 28
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0e479409a58d7c24fb02546ef0680410
-      internalID: -1942413978
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_55
-      rect:
-        serializedVersion: 2
-        x: 258
-        y: 385
-        width: 28
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 600cd02f8d698694c98d55a3d4c4abb5
-      internalID: -114473385
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_56
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 339
-        width: 16
-        height: 45
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 61254dc7508ce8e4583a3c118e576e0c
-      internalID: -752384902
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bed
+      name: Inner_5
       rect:
         serializedVersion: 2
         x: 272
@@ -1321,59 +229,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc9b229dbed70d441af2466c5a0be24e
-      internalID: -69765542
+      spriteID: 8dc23effafa4b8e4baf42546d4c80b48
+      internalID: -1345805776
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Inner_58
+      name: Inner_6
       rect:
         serializedVersion: 2
-        x: 304
-        y: 339
-        width: 16
-        height: 45
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 94d88fc16c091d34eaae0bb5f24752be
-      internalID: -2069332086
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_59
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 339
-        width: 32
-        height: 45
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d8a6c05d16ec0eb4f9c4112d795d660b
-      internalID: 1569170012
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chair_3
-      rect:
-        serializedVersion: 2
-        x: 257
+        x: 241
         y: 299
         width: 14
         height: 30
@@ -1384,14 +250,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6aae4a8fe2ad30641a7968eb97891def
-      internalID: -2141243500
+      spriteID: f93e999a5f40ae9468f31eecec8aa7f6
+      internalID: -60721082
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chair_4
+      name: Inner_7
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 299
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -7, y: -15}
+        - {x: -7, y: 15}
+        - {x: -4, y: 15}
+        - {x: -4, y: 3}
+        - {x: 7, y: 3}
+        - {x: 7, y: -15}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ac8f023ca4c74f4bbfa9b8f12fab910
+      internalID: 51099623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_8
       rect:
         serializedVersion: 2
         x: 273
@@ -1405,14 +298,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9de7baa108dbec048a776a3ef6a546e4
-      internalID: 391599546
+      spriteID: 84e78eee626cb814e813383d86202f72
+      internalID: -203418320
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chair_5
+      name: Inner_9
       rect:
         serializedVersion: 2
         x: 289
@@ -1423,22 +316,154 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -7, y: -15}
+        - {x: -7, y: 3}
+        - {x: 4, y: 3}
+        - {x: 4, y: 15}
+        - {x: 7, y: 15}
+        - {x: 7, y: -15}
       tessellationDetail: 0
       bones: []
-      spriteID: a79a01e7099bec2419eedd69b2fb5138
-      internalID: -1883536892
+      spriteID: 2a02eca1b81c41b4e8bc65c7496dac7b
+      internalID: -1939255997
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Inner_63
+      name: Inner_10
       rect:
         serializedVersion: 2
-        x: 163
-        y: 289
-        width: 2
+        x: 1
+        y: 240
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 970f41691a7792449af62347771f3b2f
+      internalID: 1781767438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_11
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 245
+        width: 46
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b814d62a4be2be8499b06701264cd8bb
+      internalID: 394135244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_12
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 193
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75417d199b5578544a23d5ea5500ced8
+      internalID: 2067250275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_13
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 179
+        width: 46
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80355b7c0e063ce40a7d960392015cd4
+      internalID: -737512063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_14
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 163
+        width: 46
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4b01731541cb2b44b072f84ab4409c5
+      internalID: -1031591427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_15
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 177
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 615815181ac6ff54aae4c3f9cbd65f56
+      internalID: -1985010695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_16
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 195
+        width: 8
         height: 11
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1447,60 +472,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d612ff8c04e93f4fa0ddb15f21e1687
-      internalID: -1756385691
+      spriteID: 5a4a35bf881b9354d906b14490c5626c
+      internalID: -1425807455
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Inner_64
-      rect:
-        serializedVersion: 2
-        x: 167
-        y: 289
-        width: 6
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 10ea4e08a584ebc4fbf977228f2dbe1b
-      internalID: -1837831876
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_65
+      name: Inner_17
       rect:
         serializedVersion: 2
         x: 178
-        y: 290
-        width: 12
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9590cb5bbb116d24c983e1052395df44
-      internalID: 653219008
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_66
-      rect:
-        serializedVersion: 2
-        x: 194
-        y: 288
+        y: 209
         width: 12
         height: 14
       alignment: 0
@@ -1510,161 +493,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e06249ae896cff8458aeb3a037246f84
-      internalID: 1930314564
+      spriteID: 5d0955820dba4284099552bd6cbf7e20
+      internalID: -1175640897
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Inner_67
-      rect:
-        serializedVersion: 2
-        x: 210
-        y: 288
-        width: 12
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 47a87e668fc4311489b3af36e3efaa98
-      internalID: 1149212506
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_68
-      rect:
-        serializedVersion: 2
-        x: 226
-        y: 289
-        width: 12
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 994bcf861b20d1541a7c718640609302
-      internalID: 1587669381
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_69
-      rect:
-        serializedVersion: 2
-        x: 213
-        y: 267
-        width: 6
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e6ad4740d6c0ad348ba08b439644756b
-      internalID: -900431822
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_70
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 269
-        width: 48
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: af9e7a209e351cb42a989955200fce6d
-      internalID: -1938438629
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_71
-      rect:
-        serializedVersion: 2
-        x: 225
-        y: 240
-        width: 46
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4090975ca33fea8438e359c07dfd3bbd
-      internalID: -851253530
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_72
-      rect:
-        serializedVersion: 2
-        x: 212
-        y: 243
-        width: 9
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9c7bc5029acff114dbf89383e77f3864
-      internalID: 1527823715
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_73
-      rect:
-        serializedVersion: 2
-        x: 164
-        y: 226
-        width: 9
-        height: 4
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 91d501fe5cb4d9c438cc8d111f51d835
-      internalID: 1574692566
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_74
+      name: Inner_18
       rect:
         serializedVersion: 2
         x: 180
@@ -1678,20 +514,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f0aeed607eee8e4dbca3d89b0bcb35c
-      internalID: 1382379400
+      spriteID: 9004b81fbc9f19e448fc7771d9f0daa6
+      internalID: 40322471
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Inner_75
+      name: Inner_19
       rect:
         serializedVersion: 2
-        x: 162
-        y: 209
+        x: 226
+        y: 290
         width: 12
-        height: 11
+        height: 9
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1699,56 +535,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3719167bb10be4f4ab9863db4a98e7e5
-      internalID: 960545418
+      spriteID: 20afa0c727a3d7f49b1a4916e8bcac45
+      internalID: 1323711795
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Inner_76
-      rect:
-        serializedVersion: 2
-        x: 177
-        y: 209
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6725333012e0da643b11f66bd06eb807
-      internalID: -683533075
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Heater
-      rect:
-        serializedVersion: 2
-        x: 193
-        y: 193
-        width: 29
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7f88607596cb8f64eaef87fc29d979ba
-      internalID: 992688086
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Heat
+      name: Inner_20
       rect:
         serializedVersion: 2
         x: 161
@@ -1762,113 +556,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3475935b63756f47af21a8a3817b574
-      internalID: 492243183
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_79
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 272
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ee4dc1643247572439935670b5e8e3a7
-      internalID: 695101281
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_80
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 240
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 06201370b4818d74d984732b11ca5f46
-      internalID: -1256588517
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_81
-      rect:
-        serializedVersion: 2
-        x: 147
-        y: 310
-        width: 26
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 70c3a19ee2cc4024aa739542bd1d83af
-      internalID: 1669803716
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_82
-      rect:
-        serializedVersion: 2
-        x: 177
-        y: 312
-        width: 14
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 44f665c029f4b864d8da2132e37a5f6e
-      internalID: -889076871
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inner_83
-      rect:
-        serializedVersion: 2
-        x: 145
-        y: 258
-        width: 14
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 24c2c5587a749484b810bc2ef07ffc94
-      internalID: 1179663013
+      spriteID: 8f5e17ce1fb8afe418704b8848b72e05
+      internalID: 1544590016
       vertices: []
       indices: 
       edges: []
@@ -1884,90 +573,28 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Bed: -69765542
-      Carpet: 1123465200
-      DecorTree: 1765578660
-      Heat: 492243183
-      Heater: 992688086
-      Inner_0: 1223930814
-      Inner_1: -661203977
-      Inner_11: -1166884076
-      Inner_12: 1015888276
-      Inner_13: -1239862229
-      Inner_14: 714115201
-      Inner_15: 909315149
-      Inner_16: 644554490
-      Inner_17: 284268489
-      Inner_18: -1565712248
-      Inner_2: -1175301015
-      Inner_20: 1193049481
-      Inner_21: 1932370737
-      Inner_22: 1231659688
-      Inner_23: -739158473
-      Inner_24: -1531726893
-      Inner_26: 1360880200
-      Inner_27: -1539925627
-      Inner_28: -2027934059
-      Inner_29: -2012367590
-      Inner_3: 395041950
-      Inner_30: 838898490
-      Inner_31: 113205646
-      Inner_33: 176051431
-      Inner_34: 2010571542
-      Inner_35: 596075927
-      Inner_36: -1979627724
-      Inner_37: -933625827
-      Inner_38: 1947787444
-      Inner_39: 1980353350
-      Inner_4: -795541494
-      Inner_40: 1450922082
-      Inner_41: 2120341419
-      Inner_42: -373986094
-      Inner_43: 1802797671
-      Inner_44: 1806833401
-      Inner_45: 1806804550
-      Inner_49: -1127940818
-      Inner_5: -229138076
-      Inner_50: 2106503348
-      Inner_51: -887914120
-      Inner_52: -1226245890
-      Inner_53: -1593370173
-      Inner_54: -1942413978
-      Inner_55: -114473385
-      Inner_56: -752384902
-      Inner_58: -2069332086
-      Inner_59: 1569170012
-      Inner_6: -193934842
-      Inner_63: -1756385691
-      Inner_64: -1837831876
-      Inner_65: 653219008
-      Inner_66: 1930314564
-      Inner_67: 1149212506
-      Inner_68: 1587669381
-      Inner_69: -900431822
-      Inner_7: 2110090390
-      Inner_70: -1938438629
-      Inner_71: -851253530
-      Inner_72: 1527823715
-      Inner_73: 1574692566
-      Inner_74: 1382379400
-      Inner_75: 960545418
-      Inner_76: -683533075
-      Inner_79: 695101281
-      Inner_8: 1717938054
-      Inner_80: -1256588517
-      Inner_81: 1669803716
-      Inner_82: -889076871
-      Inner_83: 1179663013
-      Inner_9: 197627820
-      Shelf: -727243155
-      Shelf_1: 1951840852
-      chair: 46055356
-      chair_1: 1060117676
-      chair_2: -2147427393
-      chair_3: -2141243500
-      chair_4: 391599546
-      chair_5: -1883536892
+      Inner_0: -80811557
+      Inner_1: -1987368049
+      Inner_10: 1781767438
+      Inner_11: 394135244
+      Inner_12: 2067250275
+      Inner_13: -737512063
+      Inner_14: -1031591427
+      Inner_15: -1985010695
+      Inner_16: -1425807455
+      Inner_17: -1175640897
+      Inner_18: 40322471
+      Inner_19: 1323711795
+      Inner_2: -1742476387
+      Inner_20: 1544590016
+      Inner_21: 2123140395
+      Inner_3: -2029527886
+      Inner_4: 494164422
+      Inner_5: -1345805776
+      Inner_6: -60721082
+      Inner_7: 51099623
+      Inner_8: -203418320
+      Inner_9: -1939255997
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PanelGroup : UnityEngine.MonoBehaviour
+public class PanelGroup : MonoBehaviour
 {
-    public List<UnityEngine.GameObject> panels;
+    public List<GameObject> panels;
 
     public void Show(int idPanel)
     {

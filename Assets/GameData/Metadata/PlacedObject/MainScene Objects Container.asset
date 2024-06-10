@@ -9,6 +9,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ea8afda982101e4cb63a4162883d3b2, type: 3}
+  m_Script: {fileID: 11500000, guid: 62513d06dec074f41ad2ba79be0a9286, type: 3}
   m_Name: MainScene Objects Container
   m_EditorClassIdentifier: 
+  placeableObjects:
+  - placedItem: {fileID: 11400000, guid: 044fdfe2e8c1d2b4280bd8cdb826cf8d, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: -1, y: -2, z: 0}
+    objectState: 
+  - placedItem: {fileID: 11400000, guid: 044fdfe2e8c1d2b4280bd8cdb826cf8d, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: 0, y: -2, z: 0}
+    objectState: 
+  - placedItem: {fileID: 11400000, guid: 4bdfb5087aad29e42855db3c6af09bc1, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: -2, y: 1, z: 0}
+    objectState: '{"itemSlot":{"item":{"instanceID":0},"count":0},"timer":0}'

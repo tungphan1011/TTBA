@@ -2,22 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HighlightController : UnityEngine.MonoBehaviour
+public class HighlightController : MonoBehaviour
 {
-    [SerializeField] UnityEngine.GameObject highlighter;
+    [SerializeField] GameObject highlighter;
 
-    UnityEngine.GameObject currentTarget;
+    GameObject currentTarget;
 
-    public void Highlight(UnityEngine.GameObject target)
+    public void Highlight(GameObject target)
     {
-        if (currentTarget == target)
+        if (currentTarget == target) 
         {
-            return;
+            return;        
         }
         currentTarget = target;
-        Vector3 position = target.transform.position;
+        Vector3 position = target.transform.position + Vector3.up * 0.5f;
         Highlight(position);
-    }
+    } 
 
     public void Highlight(Vector3 position)
     {

@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93dc663f31887224e8fd1335cf8b1a47, type: 3}
+  m_Script: {fileID: 11500000, guid: 54bfda06afb0e6947ba3868ab7f87e6f, type: 3}
   m_Name: New Dialogue Container
   m_EditorClassIdentifier: 
   line:
-  - Hello there
-  - I'm James. Nice to meet you!
-  - Thank you for helping us
-  actor: {fileID: 11400000, guid: a952bf42a333f004fb45d453bcef6990, type: 2}
+  - Hello there my friend
+  - I'm James. Nice to meet you
+  - How are u today?
+  actor: {fileID: 11400000, guid: 9c609cc849e328c4e8448d2c16c10771, type: 2}

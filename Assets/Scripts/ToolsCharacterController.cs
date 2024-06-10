@@ -9,9 +9,9 @@ public class ToolsCharacterController : MonoBehaviour
     CharacterController2D character;
     Rigidbody2D rgbd2d;
     ToolbarController toolbarController;
-    Animator animator;  
+    Animator animator;
     [SerializeField] float offSetDistance = 1f;
-    [SerializeField] float sizeOfInteractableArea = 1.2f;
+    //[SerializeField] float sizeOfInteractableArea = 1.2f;
     [SerializeField] MarkerManager markerManager;
     [SerializeField] TileMapReadController tileMapReadController;
     [SerializeField] float maxDistance = 1.5f;
@@ -34,7 +34,7 @@ public class ToolsCharacterController : MonoBehaviour
         SelectTile();
         CanSelectCheck();
         Marker();
-        if (Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButtonDown(0))
         {
             if (UseToolWorld() == true)
             {
@@ -60,6 +60,7 @@ public class ToolsCharacterController : MonoBehaviour
 
     private void Marker()
     {
+        
         markerManager.markedCellPosition = selectedTilePosition;
         iconHighlight.cellPosition = selectedTilePosition;
     }
@@ -94,24 +95,19 @@ public class ToolsCharacterController : MonoBehaviour
             if (item == null) 
             {
                 PickUpTile();
-
                 return; 
             }
             if (item.onTileMapAction == null) { return; }
 
             animator.SetTrigger("act");
-            bool complete = item.onTileMapAction.OnApplyToTileMap(
-                selectedTilePosition, 
-                tileMapReadController, 
-                item
-                );
+            bool complete = item.onTileMapAction.OnApplyToTileMap(selectedTilePosition, tileMapReadController, item);
 
-            if (complete == true)
+            if (complete == true) 
             {
                 if (item.onItemUsed != null)
                 {
                     item.onItemUsed.OnItemUsed(item, GameManager.instance.inventoryContainer);
-                }
+                }               
             }
         }
     }
@@ -119,7 +115,7 @@ public class ToolsCharacterController : MonoBehaviour
     private void PickUpTile()
     {
         if (onTilePickUp == null) { return;}
-        
+
         onTilePickUp.OnApplyToTileMap(selectedTilePosition, tileMapReadController, null);
     }
 }

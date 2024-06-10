@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="18" height="15" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="3">
+ <editorsettings>
+  <chunksize width="32" height="32"/>
+ </editorsettings>
+ <properties>
+  <property name="AmbientLight" value="110 110 110"/>
+  <property name="DayTiles_asdf" value="Buildings 3 1 24 Buildings 10 1 24 Buildings 14 1 24 Back 3 3 25 Back 14 3 25"/>
+  <property name="Feed" value="5 2"/>
+  <property name="Light_asdf" value="11 14 6 3 2 6 10 2 6 14 2 6 1 5 4 6 5 4 6 10 4 11 7 4 15 11 4 1 12 4"/>
+  <property name="NightTiles_asdf" value="Buildings 3 1 26 Buildings 10 1 26 Buildings 14 1 26 Back 3 3 12 Back 14 3 12"/>
+  <property name="ProduceArea" value="6 4 8 7"/>
+  <property name="Warp" value="11 15 Farm 14 11"/>
+ </properties>
+ <tileset firstgid="1" source="barn.tsx"/>
+ <tileset firstgid="85" source="p.tsx"/>
+ <layer id="1" name="Back" width="18" height="15">
+  <data encoding="base64" compression="zlib">
+   eJytkj0OgzAMRnOBUCgtVIyVwsqUAivc/051JEeyrM/8SBmejBPnYUy8c84XoCnkeBfwZMdG/AAj8VWgmuwLHAeOkeMq6ifxLGsXo8fZyKNYq4ga1KLz0dh/Ei3zOXivjtqZPa8b/yEob8o7ouderjjSDB48h6Pv1bnG6t/yJ3aA7n858Xsx/1bUWP1q/wz2euHJc0X3Qq5XF+eN7hpa/wPhgxeh
+  </data>
+ </layer>
+ <objectgroup id="2" name="Back" visible="0">
+  <object id="1" name="TileData" x="176" y="208" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+   </properties>
+  </object>
+  <object id="2" name="TileData" x="176" y="224" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="3" name="Buildings" width="18" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjZGBgYKIQMwMxKxALArEtEEtC2TBsh8SWRBNDVssONUcUCRsgsWWBWA4Ny2NRCzPHE4h9GDCBJhYxLSD2AmJvJDGYOZQCmDk2VDLHAYitKDSHE4jtoZgScxgZMNMDDxnmwNIPOibHHFEsmBxztIFYhwGSjmBscsyhFFDDHB+oOYZEYph9uPQAAAFjC9w=
+  </data>
+ </layer>
+ <objectgroup id="4" name="Buildings" visible="0"/>
+ <layer id="5" name="Front" width="18" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjZGBgYKIQMwMxKxA7MlAG2KHmuAKxBwn63IDYHYs5lILBao41FFNiDicQc6FhFjLMYWTATA88ZJiDHD7kpiOYOepArMEASUcwNiXuIRdQwxwPBtzxhQ3D4pADixw3EBsSiTkJ6AEA9M4H0Q==
+  </data>
+ </layer>
+ <objectgroup id="6" name="Front" visible="0"/>
+ <objectgroup id="8" name="Paths" visible="0"/>
+</map>

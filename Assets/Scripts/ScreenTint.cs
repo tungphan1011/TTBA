@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ScreenTint : UnityEngine.MonoBehaviour
+public class ScreenTint : MonoBehaviour
 {
     [SerializeField]
     Color unTintedColor;
@@ -14,6 +14,7 @@ public class ScreenTint : UnityEngine.MonoBehaviour
     public float speed = 0.5f;
 
     Image image;
+
     private void Awake()
     {
         image = GetComponent<Image>();

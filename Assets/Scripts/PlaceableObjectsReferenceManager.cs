@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,9 +11,31 @@ public class PlaceableObjectsReferenceManager : MonoBehaviour
     {
         if (placeableObjectsManager == null) 
         {
-            Debug.LogWarning("No placeableOjectsManager reference detected");
+            Debug.LogWarning("No placeableObjectsManager reference detected");
             return;
         }
         placeableObjectsManager.Place(item, pos);
+    }
+
+    internal void PickUp(Vector3Int gridPosition)
+    {
+        if (placeableObjectsManager == null)
+        {
+            Debug.LogWarning("No placeableObjectsManager reference detected");
+            return;
+        }
+
+        placeableObjectsManager.PickUp(gridPosition);
+    }
+
+    public bool Check(Vector3Int pos)
+    {
+        if (placeableObjectsManager == null)
+        {
+            Debug.LogWarning("No placeableObjectsManager reference detected");
+            return false;
+        }
+
+        return placeableObjectsManager.Check(pos);
     }
 }

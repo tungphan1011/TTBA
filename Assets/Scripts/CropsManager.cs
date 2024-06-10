@@ -3,9 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using UnityEngine.UIElements;
 
-[Serializable]    
-
+[Serializable]
 public class CropTile
 {
     public int growTimer;
@@ -19,19 +19,17 @@ public class CropTile
     {
         get
         {
-            if (crop == null) { return false; }  
+            if (crop == null) { return false; }
             return growTimer >= crop.timeToGrow;
         }
     }
+
     internal void Harvested()
     {
-        growTimer = 0; 
+        growTimer = 0;
         growStage = 0;
         crop = null;
-        if (renderer != null)
-        {
-            renderer.gameObject.SetActive(false);
-        }
+        renderer.gameObject.SetActive(false);
         damage = 0;
     }
 }
@@ -47,7 +45,6 @@ public class CropsManager : MonoBehaviour
             Debug.LogWarning("No tilemap crops manager are referenced in the crops manager");
             return; 
         }
-
         cropsManager.PickUp(position);
     }
 

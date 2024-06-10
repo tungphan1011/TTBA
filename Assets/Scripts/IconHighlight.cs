@@ -35,12 +35,12 @@ public class IconHighlight : MonoBehaviour
     private void Update()
     {
         targetPosition = targetTilemap.CellToWorld(cellPosition);
-        transform.position = targetPosition + targetTilemap.cellSize/2; 
+        transform.position = cellPosition + targetTilemap.cellSize/2;
     }
 
     internal void Set(Sprite icon)
     {
-        if (spriteRenderer == null) { spriteRenderer = gameObject.GetComponent<SpriteRenderer>(); }
+        if (spriteRenderer == null) { spriteRenderer = GetComponent<SpriteRenderer>(); }
 
         spriteRenderer.sprite = icon;
     }

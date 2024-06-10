@@ -2,12 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName ="Data/Tool Action/Seed Tile ")]
+[CreateAssetMenu(menuName ="Data/Tool Action/Seed Tile")]
 public class SeedTile : ToolAction
 {
-    public override bool OnApplyToTileMap(Vector3Int gridPosition, 
-        TileMapReadController tileMapReadController, 
-        Item item)
+    public override bool OnApplyToTileMap(Vector3Int gridPosition, TileMapReadController tileMapReadController, Item item)
     {
         if (tileMapReadController.cropsManager.Check(gridPosition) == false)
         {

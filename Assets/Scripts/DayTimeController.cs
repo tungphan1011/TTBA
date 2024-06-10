@@ -5,9 +5,9 @@ using UnityEngine;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
 
-public class DayTimeController : TimeAgent
+public class DayTimeController : MonoBehaviour
 {
-    const float secondsInDay = 86400f;
+    const float secondsIndays = 86400f;
     const float phaseLength = 900f; // 15 mins chunk of time
 
     [SerializeField] Color nightLightColor;
@@ -16,7 +16,7 @@ public class DayTimeController : TimeAgent
 
     float time;
     [SerializeField] float timeScale = 60f;
-    [SerializeField] float startAtTime = 28800f; // in seconds.
+    [SerializeField] float startAtTime = 28800f; //in seconds
 
     [SerializeField] Text text;
     [SerializeField] Light2D globalLight;
@@ -39,29 +39,30 @@ public class DayTimeController : TimeAgent
         agents.Add(timeAgent);
     }
 
-    public void Unsubscribe(TimeAgent timeAgent)
+    public void UnSubscribe(TimeAgent timeAgent)
     {
         agents.Remove(timeAgent);
     }
 
     float Hours
     {
-        get { return time / 3600f;  }
-    } 
+        get { return time / 3600f; }
+    }
 
     float Minutes
     {
-        get { return time % 3600f / 60f; }
+        get { return time % 3600f / 60f;  }
     }
 
-    public void Update()
+    private void Update()
     {
         time += Time.deltaTime * timeScale;
 
         TimeValueCalculation();
+
         DayLight();
 
-        if (time > secondsInDay)
+        if (time > secondsIndays)
         {
             NextDay();
         }
@@ -73,7 +74,7 @@ public class DayTimeController : TimeAgent
     {
         int hh = (int)Hours;
         int mm = (int)Minutes;
-        text.text = hh.ToString("00") + ":" + mm.ToString("00");
+        text.text = hh.ToString("00") + " : " + mm.ToString("00");
     }
 
     private void DayLight()
@@ -84,6 +85,7 @@ public class DayTimeController : TimeAgent
     }
 
     int oldPhase = 0;
+
     private void TimeAgents()
     {
         int currentPhase = (int)(time / phaseLength);
@@ -95,7 +97,7 @@ public class DayTimeController : TimeAgent
             {
                 agents[i].Invoke();
             }
-        }
+        }       
     }
 
     private void NextDay()
@@ -103,5 +105,4 @@ public class DayTimeController : TimeAgent
         time = 0;
         days += 1;
     }
-
 }

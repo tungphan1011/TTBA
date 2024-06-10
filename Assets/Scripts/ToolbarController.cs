@@ -3,8 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(BoxCollider2D))]
-
 public class ToolbarController : MonoBehaviour
 {
     [SerializeField] int toolbarSize = 12;
@@ -12,6 +10,14 @@ public class ToolbarController : MonoBehaviour
 
     public Action<int> onChange;
     [SerializeField] IconHighlight iconHighlight;
+
+    public ItemSlot GetItemSlot
+    {
+        get
+        {
+            return GameManager.instance.inventoryContainer.slots[selectedTool];
+        }
+    }
 
     public Item GetItem
     {
@@ -29,10 +35,10 @@ public class ToolbarController : MonoBehaviour
 
     private void Update()
     {
-        float delta = Input.mouseScrollDelta.y; // Scrolling 
+        float delta = Input.mouseScrollDelta.y;
         if (delta != 0)
         {
-            if (delta > 0) 
+            if (delta > 0)
             {
                 selectedTool += 1;
                 selectedTool = (selectedTool >= toolbarSize ? 0 : selectedTool);
@@ -40,25 +46,17 @@ public class ToolbarController : MonoBehaviour
             else
             {
                 selectedTool -= 1;
-                selectedTool = (selectedTool <= 0 ? toolbarSize - 1 : selectedTool);
+                selectedTool = (selectedTool < 0 ? toolbarSize - 1 : selectedTool);
             }
             onChange?.Invoke(selectedTool);
         }
-
-        if (Input.GetMouseButtonDown(0)) // Left mouse button
-        {
-            selectedTool = (selectedTool >= toolbarSize ? 0 : selectedTool);
-            onChange?.Invoke(selectedTool);
-        }
     }
-
     internal void Set(int id)
     {
         selectedTool = id;
-        UpdateHighlightIcon(selectedTool);
     }
 
-    void UpdateHighlightIcon(int id)
+    public void UpdateHighlightIcon(int id = 0)
     {
         Item item = GetItem;
         if (item == null)
@@ -70,7 +68,7 @@ public class ToolbarController : MonoBehaviour
         iconHighlight.Show = item.iconHighlight;
         if (item.iconHighlight)
         {
-            iconHighlight.Set(item.icon);    
+            iconHighlight.Set(item.icon);
         }
     }
 }

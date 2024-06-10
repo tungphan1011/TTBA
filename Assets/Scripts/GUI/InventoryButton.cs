@@ -17,16 +17,18 @@ public class InventoryButton : MonoBehaviour, IPointerClickHandler
         myIndex = index;
     }
 
+
+    //check stackable text in button
     public void Set(ItemSlot slot)
     {
         icon.gameObject.SetActive(true);
         icon.sprite = slot.item.icon;
 
-        if (slot.item.stackable == true)
+        if (slot.item.stackable == true )
         {
             text.gameObject.SetActive(true);
             text.text = slot.count.ToString();
-        }
+        } 
         else
         {
             text.gameObject.SetActive(false);
@@ -38,7 +40,7 @@ public class InventoryButton : MonoBehaviour, IPointerClickHandler
         icon.sprite = null;
         icon.gameObject.SetActive(false);
 
-        text.gameObject.SetActive(false);   
+        text.gameObject.SetActive(false);
     }
 
     public void OnPointerClick(PointerEventData eventData)

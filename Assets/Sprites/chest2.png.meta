@@ -118,14 +118,14 @@ TextureImporter:
         width: 30
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25b2647c3a23e684b830240e2caf1ecb
-      internalID: -1065121244
+      spriteID: e4434cc645b81164eb8b77db41f5e735
+      internalID: -770470496
       vertices: []
       indices: 
       edges: []
@@ -139,14 +139,14 @@ TextureImporter:
         width: 30
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c95193eb8b49604c9695f798f02951e
-      internalID: -9557224
+      spriteID: 3e06602151d0b374182f6ac61e790240
+      internalID: 1553150990
       vertices: []
       indices: 
       edges: []
@@ -162,8 +162,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      chest2_0: -1065121244
-      chest2_1: -9557224
+      chest2_0: -770470496
+      chest2_1: 1553150990
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

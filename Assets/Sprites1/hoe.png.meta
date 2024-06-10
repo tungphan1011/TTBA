@@ -3,7 +3,7 @@ guid: ca7bb4ae140009f4588c3a24f4a3133c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 12
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hoe_0
+      name: Plow_1
       rect:
         serializedVersion: 2
         x: 17
@@ -131,7 +131,7 @@ TextureImporter:
         width: 13
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -154,7 +154,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      hoe_0: 479558252
+      Plow_1: 479558252
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

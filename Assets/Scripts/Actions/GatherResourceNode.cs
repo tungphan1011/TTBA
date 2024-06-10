@@ -4,7 +4,7 @@ using UnityEngine;
 
 public enum ResourceNodeType
 {
-    Undefined,
+    undefined,
     Tree,
     Ore
 }
@@ -13,8 +13,7 @@ public enum ResourceNodeType
 public class GatherResourceNode : ToolAction
 {
     [SerializeField] float sizeOfInteractableArea = 1f;
-    [SerializeField] List<ResourceNodeType> canBeHitNodesOfType;
-
+    [SerializeField] List<ResourceNodeType> canHitNodesOfType;
     public override bool OnApply(Vector2 worldPoint)
     {
         Collider2D[] colliders = Physics2D.OverlapCircleAll(worldPoint, sizeOfInteractableArea);
@@ -24,11 +23,11 @@ public class GatherResourceNode : ToolAction
             ToolHit hit = c.GetComponent<ToolHit>();
             if (hit != null)
             {
-                if (hit.CanBeHit(canBeHitNodesOfType) == true)
+                if (hit.CanBeHit(canHitNodesOfType) == true)
                 {
                     hit.Hit();
                     return true;
-                }
+                }       
             }
         }
         return false;

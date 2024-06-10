@@ -6,4 +6,5 @@ using UnityEngine;
 public class RecipeList : ScriptableObject
 {
     public List<CraftingRecipe> recipes;
+
 }

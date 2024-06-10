@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class CharacterController2D : UnityEngine.MonoBehaviour
+public class CharacterController2D : MonoBehaviour
 {
-    Rigidbody2D rigidBbody2D;
+    Rigidbody2D rigidbody2d;
     [SerializeField] float speed = 2f;
     Vector2 motionVector;
     public Vector2 lastMotionVector;
     Animator animator;
-    public bool moving; 
+    bool moving;
 
     void Awake()
     {
-        rigidBbody2D = GetComponent<Rigidbody2D>();
+        rigidbody2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
 
@@ -23,10 +23,9 @@ public class CharacterController2D : UnityEngine.MonoBehaviour
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
 
-        motionVector = new Vector2(
-            horizontal, 
-            vertical
-            );
+        motionVector.x = horizontal;
+        motionVector.y = vertical;
+
         animator.SetFloat("horizontal", horizontal);
         animator.SetFloat("vertical", vertical);
 
@@ -39,7 +38,6 @@ public class CharacterController2D : UnityEngine.MonoBehaviour
                 horizontal,
                 vertical
                 ).normalized;
-
             animator.SetFloat("lastHorizontal", horizontal);
             animator.SetFloat("lastVertical", vertical);
         }
@@ -52,6 +50,6 @@ public class CharacterController2D : UnityEngine.MonoBehaviour
 
     private void Move()
     {
-        rigidBbody2D.velocity = motionVector * speed;
+        rigidbody2d.velocity = motionVector * speed;
     }
 }

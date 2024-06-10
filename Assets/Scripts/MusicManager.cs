@@ -42,16 +42,16 @@ public class MusicManager : MonoBehaviour
     float volume;
     IEnumerator SmoothSwitchMusic()
     {
-         volume = 1f;
+        volume = 1f;
 
-         while (volume > 0f)
-         {
-             volume -= Time.deltaTime / timeToSwitch;
-             if (volume < 0f) { volume = 0f; }
-             audioSource.volume = volume;
-             yield return new WaitForEndOfFrame();
-         }
+        while (volume > 0f)
+        {
+            volume -= Time.deltaTime / timeToSwitch;
+            if (volume < 0f) { volume = 0f; }
+            audioSource.volume = volume;
+            yield return new WaitForEndOfFrame();
+        }
 
-         Play(switchTo, true);
-    }   
+        Play(switchTo, true);
+    }
 }

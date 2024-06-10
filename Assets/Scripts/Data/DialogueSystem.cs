@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DialogueSystem : UnityEngine.MonoBehaviour
+public class DialogueSystem : MonoBehaviour
 {
     [SerializeField] Text targetText;
     [SerializeField] Text nameText;
@@ -14,10 +14,11 @@ public class DialogueSystem : UnityEngine.MonoBehaviour
     int currentTextLine;
 
     [Range(0f,1f)]
-    [SerializeField] float VisibleTextPercent;
+    [SerializeField] float visibleTextPercent;
     [SerializeField] float timePerLetter = 0.05f;
     float totalTimeToType, currentTime;
     string lineToShow;
+
 
     private void Update()
     {
@@ -30,30 +31,28 @@ public class DialogueSystem : UnityEngine.MonoBehaviour
 
     private void TypeOutText()
     {
-        if (VisibleTextPercent >= 1f) { return; }
+        if (visibleTextPercent >= 1f) { return; }
         currentTime += Time.deltaTime;
-        VisibleTextPercent = currentTime / totalTimeToType;
-        VisibleTextPercent = Mathf.Clamp(VisibleTextPercent, 0, 1f);
+        visibleTextPercent = currentTime / totalTimeToType;
+        visibleTextPercent = Mathf.Clamp(visibleTextPercent, 0, 1f);
         UpdateText();
-        
     }
-
     void UpdateText()
     {
-        int letterCount = (int)(lineToShow.Length * VisibleTextPercent);
+        int letterCount = (int)(lineToShow.Length * visibleTextPercent);
         targetText.text = lineToShow.Substring(0, letterCount);
     }
 
     private void PushText()
-    {
-        if (VisibleTextPercent < 1f)
+    {      
+        if (visibleTextPercent < 1f)
         {
-            VisibleTextPercent = 1f;
+            visibleTextPercent = 1f;
             UpdateText();
             return;
         }
 
-        if (currentTextLine >= currentDialogue.line.Count) 
+        if (currentTextLine >= currentDialogue.line.Count)
         {
             Conclude();
         }
@@ -64,11 +63,11 @@ public class DialogueSystem : UnityEngine.MonoBehaviour
     }
 
     void CycleLine()
-    {      
+    {
         lineToShow = currentDialogue.line[currentTextLine];
         totalTimeToType = lineToShow.Length * timePerLetter;
         currentTime = 0f;
-        VisibleTextPercent = 0f;
+        visibleTextPercent = 0;
         targetText.text = "";
 
         currentTextLine += 1;

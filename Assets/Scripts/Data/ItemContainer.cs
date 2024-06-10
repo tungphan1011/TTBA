@@ -15,7 +15,7 @@ public class ItemSlot
         count = slot.count;
     }
 
-    public void Set(Item item, int count)
+    public void Set(Item item, int count) 
     {
         this.item = item;
         this.count = count;
@@ -29,11 +29,19 @@ public class ItemSlot
 }
 
 [CreateAssetMenu(menuName ="Data/Item Container")]
-
 public class ItemContainer : ScriptableObject
 {
     public List<ItemSlot> slots;
     public bool isDirty;
+
+    internal void Init()
+    {
+        slots = new List<ItemSlot>();
+        for (int i = 0; i < 36; i++)
+        {
+            slots.Add(new ItemSlot());
+        }
+    }
 
     public void Add(Item item, int count = 1)
     {
@@ -48,17 +56,17 @@ public class ItemContainer : ScriptableObject
             }
             else
             {
-                itemSlot = slots.Find(x => x.item == null);
+                itemSlot = slots.Find(x => x.item ==  null);
                 if (itemSlot != null)
                 {
                     itemSlot.item = item;
                     itemSlot.count = count;
                 }
             }
-        } 
-        else 
+        }
+        else
         {
-            // add non stackable item to our item container
+            // Add non stackable item to our item container
             ItemSlot itemSlot = slots.Find(x => x.item == null);
             if (itemSlot != null)
             {
@@ -67,17 +75,17 @@ public class ItemContainer : ScriptableObject
         }
     }
 
-    public void Remove(Item itemRemove, int count = 1) 
+    public void Remove(Item itemToRemove, int count = 1) 
     {
         isDirty = true;
 
-        if (itemRemove.stackable)
+        if (itemToRemove.stackable)
         {
-            ItemSlot itemSlot = slots.Find(x => x.item == itemRemove);
+            ItemSlot itemSlot = slots.Find(x => x.item == itemToRemove);
             if (itemSlot == null) { return; }
 
             itemSlot.count -= count;
-            if(itemSlot.count <= 0)
+            if (itemSlot.count <= 0)
             {
                 itemSlot.Clear();
             }
@@ -88,7 +96,7 @@ public class ItemContainer : ScriptableObject
             {
                 count -= 1;
 
-                ItemSlot itemSlot = slots.Find(x => x.item == itemRemove);
+                ItemSlot itemSlot = slots.Find(x => x.item == itemToRemove);
                 if (itemSlot == null) { return; }
 
                 itemSlot.Clear();
@@ -98,7 +106,7 @@ public class ItemContainer : ScriptableObject
 
     internal bool CheckFreeSpace()
     {
-        for (int i  = 0; i < slots.Count; i++)
+        for (int i = 0; i < slots.Count; i++)
         {
             if (slots[i].item == null)
             {
@@ -106,7 +114,7 @@ public class ItemContainer : ScriptableObject
             }
         }
 
-        return false;
+        return false;   
     }
 
     internal bool CheckItem(ItemSlot checkingItem)
@@ -115,7 +123,7 @@ public class ItemContainer : ScriptableObject
 
         if (itemSlot == null) { return false; }
 
-        if (checkingItem.item.stackable) { return itemSlot.count > checkingItem.count;  }
+        if (checkingItem.item.stackable) { return itemSlot.count > checkingItem.count; }
 
         return true;
     }

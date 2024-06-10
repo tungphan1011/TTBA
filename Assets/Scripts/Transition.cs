@@ -10,12 +10,12 @@ public enum TransitionType
     Scene
 }
 
-public class Transition : UnityEngine.MonoBehaviour
+public class Transition : MonoBehaviour
 {
     [SerializeField] TransitionType transitionType;
     [SerializeField] string sceneNameToTransition;
     [SerializeField] Vector3 targetPosition;
- 
+
     Transform destination;
 
     // Start is called before the first frame update
@@ -26,25 +26,25 @@ public class Transition : UnityEngine.MonoBehaviour
 
     internal void InitiateTransition(Transform toTransition)
     {
-        switch(transitionType)
+        switch (transitionType)
         {
             case TransitionType.Warp:
-                Cinemachine.CinemachineBrain currentCamera = 
-                    Camera.main.GetComponent<Cinemachine.CinemachineBrain>();
-                
+                Cinemachine.CinemachineBrain currentCamera = Camera.main.GetComponent<Cinemachine.CinemachineBrain>();
+
                 currentCamera.ActiveVirtualCamera.OnTargetObjectWarped(
                     toTransition,
-                    destination.position - toTransition.position
-                );
+                    targetPosition - toTransition.position
+                    );
+
                 toTransition.position = new Vector3(
                     destination.position.x,
                     destination.position.y,
                     toTransition.position.z
-                );
+                    );
                 break;
-            case TransitionType.Scene:
+            case TransitionType.Scene:                
                 GameSceneManager.instance.InitSwitchScene(sceneNameToTransition, targetPosition);
                 break;
-        }  
+        }        
     }
 }

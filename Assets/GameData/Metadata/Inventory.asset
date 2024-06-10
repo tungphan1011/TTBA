@@ -9,33 +9,33 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10b0cd0e7c90072488ace1ee464374d8, type: 3}
-  m_Name: Inventory
+  m_Script: {fileID: 11500000, guid: 62342c075b7d89f49ae2878cae0b2c93, type: 3}
+  m_Name: inventory
   m_EditorClassIdentifier: 
   slots:
-  - item: {fileID: 11400000, guid: fbff0ccb2a2ac5e49afcbfc67fdbd27e, type: 2}
-    count: 100
-  - item: {fileID: 11400000, guid: 402ad28eaaea8ea45bbd7a3c132c8cfd, type: 2}
-    count: 15
-  - item: {fileID: 11400000, guid: 255ad1d7fd4fe454ca1e887559cdf137, type: 2}
-    count: 100
-  - item: {fileID: 11400000, guid: 6710b2c4d9c858c439583d78398ee10d, type: 2}
-    count: 1
-  - item: {fileID: 11400000, guid: 1729ffc4eed5e034d8221ba46f242402, type: 2}
-    count: 1
-  - item: {fileID: 11400000, guid: 54147f7a1583328498cff30405fc551d, type: 2}
-    count: 1
-  - item: {fileID: 11400000, guid: 937fd64ea93c4d241a4f5c2b5a28e822, type: 2}
-    count: 90
   - item: {fileID: 0}
     count: 0
-  - item: {fileID: 0}
+  - item: {fileID: 11400000, guid: 5b1b06f92a11d464cad29d67e9faeff3, type: 2}
     count: 0
-  - item: {fileID: 0}
+  - item: {fileID: 11400000, guid: 95e2919189c89744ca536255f6cbf272, type: 2}
+    count: 980
+  - item: {fileID: 11400000, guid: 01d2925fbe4681043b6b5eada509159f, type: 2}
     count: 0
-  - item: {fileID: 0}
+  - item: {fileID: 11400000, guid: a8b926df948220742ba1c959ef8f6ef7, type: 2}
     count: 0
-  - item: {fileID: 0}
+  - item: {fileID: 11400000, guid: 0c5dad15dd152654394e26914e2a8eaf, type: 2}
+    count: 0
+  - item: {fileID: 11400000, guid: e599893660db84a49a72f551aba8dbdf, type: 2}
+    count: 99
+  - item: {fileID: 11400000, guid: 56e648083b671994ea838c785dd1a990, type: 2}
+    count: 99
+  - item: {fileID: 11400000, guid: 15d75c4a8a070b24eba8df397da06b70, type: 2}
+    count: 47
+  - item: {fileID: 11400000, guid: c2fc67b4a729a5344bc4df14b231c152, type: 2}
+    count: 964
+  - item: {fileID: 11400000, guid: f88e2b200312c9d45878e5ccd5fa1af1, type: 2}
+    count: 0
+  - item: {fileID: 11400000, guid: 044fdfe2e8c1d2b4280bd8cdb826cf8d, type: 2}
     count: 0
   - item: {fileID: 0}
     count: 0

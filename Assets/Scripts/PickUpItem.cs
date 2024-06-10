@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickUpItem : UnityEngine.MonoBehaviour
+public class PickUpItem : MonoBehaviour
 {
     Transform player;
     [SerializeField] float speed = 5f;
@@ -22,33 +22,28 @@ public class PickUpItem : UnityEngine.MonoBehaviour
         this.item = item;
         this.count = count;
 
-        SpriteRenderer renderer = GetComponent<SpriteRenderer>();
+        SpriteRenderer renderer = GetComponent<SpriteRenderer>();   
         renderer.sprite = item.icon;
     }
 
     private void Update()
     {
-
         ttl -= Time.deltaTime;
-        if (ttl < 0)
-        {
-            Destroy(gameObject);
-        }
+        if (ttl < 0) { Destroy(gameObject); }
 
         float distance = Vector3.Distance(transform.position, player.position);
         if (distance > pickUpDistance) 
         {
             return;
         }
-
         transform.position = Vector3.MoveTowards(
-            transform.position,
-            player.position,
+            transform.position, 
+            player.position, 
             speed * Time.deltaTime
             );
         if (distance < 0.1f)
         {
-            //*TODO* Should be moved into specified controller rather than being checked here 
+            // *TODO* Should be moved into specified contoller rather than being checked here
             if (GameManager.instance.inventoryContainer != null)
             {
                 GameManager.instance.inventoryContainer.Add(item, count);
