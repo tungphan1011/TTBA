@@ -28138,7 +28138,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles_1411
+      name: Outdoor Chair
       rect:
         serializedVersion: 2
         x: 770
@@ -28894,7 +28894,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles_1460
+      name: RoadTopLeft
       rect:
         serializedVersion: 2
         x: 0
@@ -28915,7 +28915,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles_1461
+      name: RoadTop
       rect:
         serializedVersion: 2
         x: 16
@@ -28936,7 +28936,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles_1462
+      name: RoadTopRight
       rect:
         serializedVersion: 2
         x: 32
@@ -29125,7 +29125,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles_1477
+      name: RoadRight
       rect:
         serializedVersion: 2
         x: 0
@@ -29146,7 +29146,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles_1478
+      name: RoadCenter
       rect:
         serializedVersion: 2
         x: 16
@@ -29167,7 +29167,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles_1479
+      name: RoadLeft
       rect:
         serializedVersion: 2
         x: 32
@@ -29188,7 +29188,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles_1480
+      name: Road1
       rect:
         serializedVersion: 2
         x: 48
@@ -29209,7 +29209,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles_1481
+      name: Road2
       rect:
         serializedVersion: 2
         x: 64
@@ -29608,7 +29608,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles_1502
+      name: RoadBottomLeft
       rect:
         serializedVersion: 2
         x: 0
@@ -29629,7 +29629,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles_1503
+      name: RoadBottom
       rect:
         serializedVersion: 2
         x: 16
@@ -29650,7 +29650,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles_1504
+      name: RoadBottomRight
       rect:
         serializedVersion: 2
         x: 32
@@ -29671,7 +29671,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles_1505
+      name: Road3
       rect:
         serializedVersion: 2
         x: 48
@@ -29692,7 +29692,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles_1506
+      name: Road4
       rect:
         serializedVersion: 2
         x: 64
@@ -32695,7 +32695,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles_540
+      name: ChristmasTree
       rect:
         serializedVersion: 2
         x: 753
@@ -32716,7 +32716,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles_858
+      name: SnowMan
       rect:
         serializedVersion: 2
         x: 769
@@ -32737,7 +32737,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles_1062
+      name: SnowMan_1
       rect:
         serializedVersion: 2
         x: 784
@@ -32768,8 +32768,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      ChristmasTree: 476628286
       Grass: 1640465075
       Grass_858: -791149053
+      Outdoor Chair: -1030241319
       PlowableDirt: 1169987827
       PlowableDirt Bottom: 897448225
       PlowableDirt Bottom Left: -1921243053
@@ -32783,11 +32785,26 @@ TextureImporter:
       PlowableDirt Top: 484949124
       PlowableDirt Top Left: 591709934
       PlowableDirt Top Right: -265054722
+      Road1: 1137882840
+      Road2: 2051956335
+      Road3: 988676715
+      Road4: 335515609
+      RoadBottom: -715581978
+      RoadBottomLeft: -1011344883
+      RoadBottomRight: -1469686981
+      RoadCenter: -2024240247
+      RoadLeft: -2125796590
+      RoadRight: -1015332920
+      RoadTop: -1606901998
+      RoadTopLeft: 1738008693
+      RoadTopRight: 2128242885
       Rock: 2060213240
       Rock_1: 735023862
       Rock_2: -287817114
       Rock_3: 969205865
       Snow: -1256889238
+      SnowMan: -1259853366
+      SnowMan_1: -2106509575
       Tree: 1363625475
       WaterBottom: -1768134959
       WaterBottomLeft: -302161354
@@ -32874,7 +32891,6 @@ TextureImporter:
       tiles_106: 1028490803
       tiles_1060: 346556024
       tiles_1061: 726469095
-      tiles_1062: -2106509575
       tiles_1063: -419698647
       tiles_1064: 1121538742
       tiles_1065: 710884987
@@ -33258,7 +33274,6 @@ TextureImporter:
       tiles_1409: 1066627227
       tiles_141: 235772545
       tiles_1410: -445069897
-      tiles_1411: -1030241319
       tiles_1412: 678005374
       tiles_1413: 353493562
       tiles_1414: 967127
@@ -33312,9 +33327,6 @@ TextureImporter:
       tiles_1458: 2013355636
       tiles_1459: 1969075995
       tiles_146: -1232441513
-      tiles_1460: 1738008693
-      tiles_1461: -1606901998
-      tiles_1462: 2128242885
       tiles_1463: -2141910170
       tiles_1464: -1809900819
       tiles_1465: 583552396
@@ -33330,12 +33342,7 @@ TextureImporter:
       tiles_1474: -798995298
       tiles_1475: 164822747
       tiles_1476: 726906835
-      tiles_1477: -1015332920
-      tiles_1478: -2024240247
-      tiles_1479: -2125796590
       tiles_148: 797667045
-      tiles_1480: 1137882840
-      tiles_1481: 2051956335
       tiles_1482: -1721990817
       tiles_1483: -1244372102
       tiles_1484: 734815931
@@ -33359,11 +33366,6 @@ TextureImporter:
       tiles_150: 826479028
       tiles_1500: -595408954
       tiles_1501: -129429797
-      tiles_1502: -1011344883
-      tiles_1503: -715581978
-      tiles_1504: -1469686981
-      tiles_1505: 988676715
-      tiles_1506: 335515609
       tiles_1507: -1118178591
       tiles_1508: 1133196388
       tiles_1509: 195808163
@@ -33958,7 +33960,6 @@ TextureImporter:
       tiles_538: 1266582839
       tiles_539: -1733809694
       tiles_54: 1545686562
-      tiles_540: 476628286
       tiles_541: 1846603167
       tiles_542: -1089094315
       tiles_543: 332767499
@@ -34297,7 +34298,6 @@ TextureImporter:
       tiles_855: 1865647406
       tiles_856: -2104740954
       tiles_857: -1020128726
-      tiles_858: -1259853366
       tiles_859: -1360531446
       tiles_86: 1404875661
       tiles_860: 1535277016
