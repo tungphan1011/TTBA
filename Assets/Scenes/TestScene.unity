@@ -141,7 +141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8716020603554303294, guid: ebf76638445e09f4db5289fdc4f483b4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8716020603554303294, guid: ebf76638445e09f4db5289fdc4f483b4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -191,6 +191,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 1.36
       objectReference: {fileID: 0}
+    - target: {fileID: -6673758652510415747, guid: ebf76638445e09f4db5289fdc4f483b4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -5683519188753346429, guid: ebf76638445e09f4db5289fdc4f483b4, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -204,12 +208,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -5683519188753346429, guid: ebf76638445e09f4db5289fdc4f483b4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5683519188753346429, guid: ebf76638445e09f4db5289fdc4f483b4, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -3437094004422421018, guid: ebf76638445e09f4db5289fdc4f483b4, type: 3}
       propertyPath: m_Name
       value: Barn
+      objectReference: {fileID: 0}
+    - target: {fileID: 3915276749541786698, guid: ebf76638445e09f4db5289fdc4f483b4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

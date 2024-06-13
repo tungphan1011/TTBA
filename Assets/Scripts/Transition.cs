@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -15,13 +16,19 @@ public class Transition : MonoBehaviour
     [SerializeField] TransitionType transitionType;
     [SerializeField] string sceneNameToTransition;
     [SerializeField] Vector3 targetPosition;
+    [SerializeField] Collider2D confiner;
 
-    Transform destination;
+    CameraConfiner cameraConfiner;
+    [SerializeField] Transform destination;
 
     // Start is called before the first frame update
     void Start()
     {
-        destination = transform.GetChild(1);
+        if (confiner != null)
+        {
+            cameraConfiner = FindObjectOfType<CameraConfiner>();
+        }
+
     }
 
     internal void InitiateTransition(Transform toTransition)
@@ -29,22 +36,37 @@ public class Transition : MonoBehaviour
         switch (transitionType)
         {
             case TransitionType.Warp:
-                Cinemachine.CinemachineBrain currentCamera = Camera.main.GetComponent<Cinemachine.CinemachineBrain>();
+                Cinemachine.CinemachineBrain currentCamera = 
+                    Camera.main.GetComponent<Cinemachine.CinemachineBrain>();
+
+                if (cameraConfiner != null)
+                {
+                    cameraConfiner.Updatebounds(confiner);
+                }
 
                 currentCamera.ActiveVirtualCamera.OnTargetObjectWarped(
                     toTransition,
-                    targetPosition - toTransition.position
+                    destination.position - toTransition.position
                     );
 
                 toTransition.position = new Vector3(
                     destination.position.x,
                     destination.position.y,
                     toTransition.position.z
-                    );
+                );
+
                 break;
             case TransitionType.Scene:                
                 GameSceneManager.instance.InitSwitchScene(sceneNameToTransition, targetPosition);
                 break;
         }        
+    }
+
+    private void OnDrawGizmos()
+    {
+        if (transitionType == TransitionType.Scene) 
+        {
+            Handles.Label(transform.position, "to " + sceneNameToTransition);
+        }       
     }
 }
