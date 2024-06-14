@@ -180,6 +180,7 @@ GameObject:
   - component: {fileID: 1324214423}
   - component: {fileID: 1324214425}
   - component: {fileID: 1324214424}
+  - component: {fileID: 1324214426}
   m_Layer: 0
   m_Name: BaseTilemap2
   m_TagString: Untagged
@@ -1893,6 +1894,42 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!19719996 &1324214426
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324214422}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0
+  m_UseDelaunayMesh: 0
 --- !u!1 &1531029972
 GameObject:
   m_ObjectHideFlags: 0
@@ -1905,8 +1942,6 @@ GameObject:
   - component: {fileID: 1531029975}
   - component: {fileID: 1531029974}
   - component: {fileID: 1531029976}
-  - component: {fileID: 1531029978}
-  - component: {fileID: 1531029977}
   m_Layer: 0
   m_Name: BaseTilemap
   m_TagString: Untagged
@@ -10785,102 +10820,16 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -11.775086, y: 4.952305}
+  - {x: -10.978447, y: 8.006085}
+  - {x: -20.023329, y: 7.9956026}
+  - {x: -20.008919, y: 4.437964}
+  - {x: -11.775892, y: 4.391945}
   - {x: -11.790354, y: -5.6657867}
   - {x: 12.802845, y: -5.6357565}
-  - {x: 12.704181, y: 4.916851}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
---- !u!68 &1531029977
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1531029972}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -11.792489, y: 4.9962115}
-  - {x: -9.324104, y: 4.989542}
-  - {x: -9.29942, y: 2.9853153}
-  - {x: -3.738584, y: 2.987546}
-  - {x: -3.7788062, y: 5.0107083}
-  - {x: -1.0068861, y: 5.0151443}
-  - {x: -0.9964756, y: 7.986935}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
---- !u!68 &1531029978
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1531029972}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: 1.9663024, y: 7.991213}
-  - {x: 2.0197678, y: 5.0000186}
-  - {x: 4.670931, y: 4.9935117}
-  - {x: 4.693391, y: 2.9916193}
-  - {x: 10.272647, y: 2.9947827}
-  - {x: 10.2565775, y: 4.9646916}
-  - {x: 12.685396, y: 4.9998307}
+  - {x: 12.726739, y: 4.3533077}
+  - {x: 21.017647, y: 4.343874}
+  - {x: 21.028635, y: 8.0149145}
+  - {x: 12.002377, y: 8.008566}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0

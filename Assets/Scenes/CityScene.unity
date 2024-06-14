@@ -647,11 +647,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2084099657790830447, guid: c09726bb99532d648965709e6834cb88, type: 3}
       propertyPath: targetPosition.x
-      value: 12
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2084099657790830447, guid: c09726bb99532d648965709e6834cb88, type: 3}
       propertyPath: targetPosition.y
-      value: 8.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2084099657790830447, guid: c09726bb99532d648965709e6834cb88, type: 3}
       propertyPath: sceneNameToTransition
