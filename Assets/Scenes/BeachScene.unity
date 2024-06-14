@@ -10895,7 +10895,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 966697446989254762, guid: c09726bb99532d648965709e6834cb88, type: 3}
       propertyPath: m_Name
-      value: RoadTransition
+      value: FarmTransition
       objectReference: {fileID: 0}
     - target: {fileID: 1173806641052233783, guid: c09726bb99532d648965709e6834cb88, type: 3}
       propertyPath: m_LocalScale.x
@@ -10955,15 +10955,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2084099657790830447, guid: c09726bb99532d648965709e6834cb88, type: 3}
       propertyPath: targetPosition.x
-      value: -0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2084099657790830447, guid: c09726bb99532d648965709e6834cb88, type: 3}
       propertyPath: targetPosition.y
-      value: -16
+      value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 2084099657790830447, guid: c09726bb99532d648965709e6834cb88, type: 3}
       propertyPath: sceneNameToTransition
-      value: RoadScene
+      value: FarmScene
       objectReference: {fileID: 0}
     - target: {fileID: 4532250211394760464, guid: c09726bb99532d648965709e6834cb88, type: 3}
       propertyPath: m_LocalPosition.x

@@ -7,8 +7,9 @@ using UnityEngine.UI;
 
 public class DayTimeController : MonoBehaviour
 {
-    const float secondsIndays = 86400f;
+    const float secondsInDay = 86400f;
     const float phaseLength = 900f; // 15 mins chunk of time
+    const float phasesInDay = 96f; //secondsInday divided by phaseLength
 
     [SerializeField] Color nightLightColor;
     [SerializeField] AnimationCurve nightTimeCurve;
@@ -62,12 +63,17 @@ public class DayTimeController : MonoBehaviour
 
         DayLight();
 
-        if (time > secondsIndays)
+        if (time > secondsInDay)
         {
             NextDay();
         }
 
         TimeAgents();
+
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            SkipTime(hours: 4);
+        }
     }
 
     private void TimeValueCalculation()
@@ -84,25 +90,44 @@ public class DayTimeController : MonoBehaviour
         globalLight.color = c;
     }
 
-    int oldPhase = 0;
+    int oldPhase = -1;
 
     private void TimeAgents()
     {
-        int currentPhase = (int)(time / phaseLength);
-
-        if (oldPhase != currentPhase)
+        if (oldPhase == -1) 
         {
-            oldPhase = currentPhase;
+            oldPhase = CalculatePhase();
+        }
+
+        int currentPhase = CalculatePhase();
+
+        while (oldPhase < currentPhase)
+        {
+            oldPhase += 1;
             for (int i = 0; i < agents.Count; i++)
             {
                 agents[i].Invoke();
             }
-        }       
+        }    
+    }
+
+    private int CalculatePhase()
+    {
+        return (int)(time / phaseLength) + (int)(days * phasesInDay);
     }
 
     private void NextDay()
     {
-        time = 0;
+        time -= secondsInDay;
         days += 1;
+    }
+
+    public void SkipTime(float seconds = 0, float minutes = 0, float hours = 0)
+    {
+        float timeToSkip = seconds;
+        timeToSkip += minutes * 60f;
+        timeToSkip += hours * 3600f;
+
+        time += timeToSkip;
     }
 }

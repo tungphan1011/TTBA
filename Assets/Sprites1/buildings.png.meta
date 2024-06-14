@@ -360,27 +360,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: buildings_11
-      rect:
-        serializedVersion: 2
-        x: 769
-        y: 832
-        width: 122
-        height: 201
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: efb2d1a23e9961e48ab90201e9dc3568
-      internalID: 358762571
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: buildings_12
       rect:
         serializedVersion: 2
@@ -9116,6 +9095,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: DoorOpen
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 960
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2275162384053b341b3eff255912cfc8
+      internalID: 285305770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -9127,6 +9127,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      DoorOpen: 285305770
       House: -1331162667
       buildings_0: -179455677
       buildings_1: 412980623
