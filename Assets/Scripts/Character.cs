@@ -6,18 +6,20 @@ using UnityEngine;
 [Serializable]
 public class Stat
 {
-    public int maxVal;
     public int currVal;
+    public int maxVal;    
 
     public Stat(int curr, int max)
     {
-        maxVal = max;
         currVal = curr;
+        maxVal = max;       
     }
 
     internal void Subtract(int amount)
     {
         currVal -= amount;
+
+        if (currVal < 0) { currVal = 0; }
     }
 
     internal void Add(int amount)
@@ -33,7 +35,7 @@ public class Stat
     }
 }
 
-public class Character : MonoBehaviour
+public class Character : MonoBehaviour, IDamageable
 {
     public Stat hp;
     [SerializeField] StatusBar hpBar;
@@ -42,6 +44,15 @@ public class Character : MonoBehaviour
 
     public bool isDead;
     public bool isExhausted;
+
+    DisableControls disableControls;
+    PlayerRespawn playerRespawn;
+
+    private void Awake()
+    {
+        disableControls = GetComponent<DisableControls>();
+        playerRespawn = GetComponent<PlayerRespawn>();
+    }
 
     private void Start()
     {
@@ -61,14 +72,21 @@ public class Character : MonoBehaviour
 
     public void TakeDamage(int amount)
     {
+        if (isDead == true) { return; }
         hp.Subtract(amount);
         if (hp.currVal <= 0)
         {
-            isDead = true;
+            Dead();
         }
         UpdateHPBar();
     }
 
+    private void Dead()
+    {
+        isDead = true;
+        disableControls.DisableControl();
+        playerRespawn.StartRespawn();
+    }
 
     public void Heal(int amount)
     {
@@ -123,5 +141,20 @@ public class Character : MonoBehaviour
         {
             Rest(10);
         }
+    }
+
+    public void CalculateDamage(ref int damage)
+    {
+        
+    }
+
+    public void ApplyDamage(int damage)
+    {
+        TakeDamage(damage);
+    }
+
+    public void CheckState()
+    {
+        
     }
 }

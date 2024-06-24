@@ -12662,8 +12662,8 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: 14.999761, y: 13.999895}
-      - {x: -14.999675, y: 13.99915}
-      - {x: -14.986986, y: -14.987346}
+      - {x: -37.98476, y: 13.99915}
+      - {x: -38.03556, y: -14.987346}
       - {x: 14.973875, y: -14.98691}
   m_UseDelaunayMesh: 0
 --- !u!1 &791104016 stripped
@@ -16570,7 +16570,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!60 &1014104734
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -16942,6 +16942,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stationary: 1
+--- !u!1 &1185384089
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1185384090}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1185384090
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185384089}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -33.48, y: 9.94, z: 0.015387436}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1196264801 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 26775590893231554, guid: 0a2af63177177d04b976a6bfc0b3426b, type: 3}
@@ -26582,14 +26613,15 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 58048174}
   - {fileID: 1322545271}
   - {fileID: 98163320}
   - {fileID: 804751401}
   - {fileID: 1731934480}
-  - {fileID: 58048174}
   - {fileID: 2025033209}
   - {fileID: 699551677}
   - {fileID: 822149294}
   - {fileID: 1072254832}
   - {fileID: 759521605}
   - {fileID: 1014104735}
+  - {fileID: 1185384090}

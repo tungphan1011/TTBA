@@ -13,6 +13,6 @@ public class StatusBar : MonoBehaviour
         bar.maxValue = max;
         bar.value = curr;
 
-        text.text = max.ToString() + "/" + curr.ToString();
+        text.text = curr.ToString() + "/" + max.ToString();
     }
 }
