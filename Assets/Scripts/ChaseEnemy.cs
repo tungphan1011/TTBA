@@ -10,6 +10,8 @@ public class ChaseEnemy : MonoBehaviour
     [SerializeField] int damage = 1;
     [SerializeField] float timeToAttack = 2f;
     float attackTimer;
+    public float chaseRadius;
+    public float attackRadius;
 
     // Start is called before the first frame update
     void Start()
@@ -18,14 +20,17 @@ public class ChaseEnemy : MonoBehaviour
         attackTimer = Random.Range(0, timeToAttack);
     }
 
-    // Update is called once per frame
+    // Update is called once per fram
     void Update()
     {
-        transform.position = Vector3.MoveTowards(
-            transform.position,
-            player.position,
-            speed * Time.deltaTime
+        if (Vector3.Distance(player.position, transform.position) <= chaseRadius && Vector3.Distance(player.position, transform.position) > attackRadius)
+        {
+            transform.position = Vector3.MoveTowards(
+                transform.position,
+                player.position,
+                speed * Time.deltaTime
             );
+        }
 
         Attack();
     }
@@ -42,10 +47,13 @@ public class ChaseEnemy : MonoBehaviour
 
         for (int i = 0; i < targets.Length; i++)
         {
-            Damageable character = targets[i].GetComponent<Damageable>();
-            if (character != null)
+            if (targets[i].CompareTag("Player"))
             {
-                character.TakeDamage(damage);
+                Damageable character = targets[i].GetComponent<Damageable>();
+                if (character != null)
+                {
+                    character.TakeDamage(damage);
+                }
             }
         }
     }

@@ -17,4 +17,5 @@ public class GameManager : MonoBehaviour
     public DialogueSystem dialogueSystem;
     public ItemList itemDB;
     public OnScreenMessageSystem messageSystem;
+    public ScreenTint screenTint;
 }

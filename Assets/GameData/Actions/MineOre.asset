@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92a89920e87041241908cb0ca2ba730a, type: 3}
   m_Name: MineOre
   m_EditorClassIdentifier: 
+  energyCost: 5
   sizeOfInteractableArea: 1
   canHitNodesOfType: 02000000
+  skillType: 1

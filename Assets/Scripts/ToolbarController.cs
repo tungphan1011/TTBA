@@ -51,6 +51,7 @@ public class ToolbarController : MonoBehaviour
             onChange?.Invoke(selectedTool);
         }
     }
+
     internal void Set(int id)
     {
         selectedTool = id;

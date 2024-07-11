@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e9fc3916bac6324493db214e10eb588, type: 3}
   m_Name: SuperPlowAction
   m_EditorClassIdentifier: 
+  energyCost: 3
   canPlow:
   - {fileID: 11400000, guid: deac7bb804bdccf45b2d00d194996ef3, type: 2}
   - {fileID: 11400000, guid: 07f05531a8aaeba4198df974f17f311d, type: 2}
+  onPlowUsed: {fileID: 0}

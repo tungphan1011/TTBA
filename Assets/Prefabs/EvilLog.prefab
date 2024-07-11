@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5282887461479888332}
   - component: {fileID: 2120216314854766451}
   - component: {fileID: 597791492442320161}
+  - component: {fileID: -1666409147136960762}
   m_Layer: 0
   m_Name: EvilLog
   m_TagString: Untagged
@@ -144,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ef8b36d9a343e04fb607797ce69555d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 10
+  hp: 3
 --- !u!114 &597791492442320161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,5 +156,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9db0cba698dfd4f4485a0000f936d5d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-1666409147136960762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7848004803968997932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1d1582c3209c05439ced39d80123c5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

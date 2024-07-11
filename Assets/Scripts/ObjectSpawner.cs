@@ -33,8 +33,8 @@ public class ObjectSpawner : MonoBehaviour
         }
         else
         {
-            Spawn();
-            Destroy(gameObject);
+            Spawn(null);
+            //Destroy(gameObject);
         }
     }
 
@@ -43,7 +43,7 @@ public class ObjectSpawner : MonoBehaviour
         spawnedObjects.Remove(spawnedObject);
     }
 
-    void Spawn()
+    void Spawn(DayTimeController dayTimeController)
     {
         if (Random.value > probability) { return; }
         if (objectSpawnLimit <= spawnedObjects.Count && objectSpawnLimit != -1) { return; }
@@ -86,16 +86,48 @@ public class ObjectSpawner : MonoBehaviour
 
         for (int i = 0; i < spawnedObjects.Count; i++)
         {
-            toSave.spawnedObjectDatas.Add(
-                new SpawnedObject.SaveSpawnedObjectData(
-                    spawnedObjects[i].objId,
-                    spawnedObjects[i].transform.position
+            // Check if spawnedObjects[i] is not null
+            if (spawnedObjects[i] != null)
+            {
+                // Access objId and position only if the object exists
+                toSave.spawnedObjectDatas.Add(
+                    new SpawnedObject.SaveSpawnedObjectData(
+                        spawnedObjects[i].objId,
+                        spawnedObjects[i].transform.position
                     )
                 );
+            }
         }
 
         return JsonUtility.ToJson(toSave);
     }
+
+    /*string Read()
+    {
+        ToSave toSave = new ToSave();
+
+        // Iterate through spawnedObjects safely
+        for (int i = 0; i < spawnedObjects.Count; i++)
+        {
+            if (spawnedObjects[i] != null) // Check if the object is not null
+            {
+                // Check if the object is still active in the scene
+                if (spawnedObjects[i].gameObject != null && spawnedObjects[i].gameObject.activeSelf)
+                {
+                    // Access the necessary data and add it to toSave
+                    toSave.spawnedObjectDatas.Add(
+                        new SpawnedObject.SaveSpawnedObjectData(
+                            spawnedObjects[i].objId,
+                            spawnedObjects[i].transform.position
+                        )
+                    );
+                }
+            }
+        }
+
+        // Convert to JSON
+        return JsonUtility.ToJson(toSave);
+    } */
 
     public void Load(string json)
     {

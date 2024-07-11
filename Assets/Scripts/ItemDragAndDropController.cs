@@ -20,6 +20,14 @@ public class ItemDragAndDropController : MonoBehaviour
         itemIconImage = itemIcon.GetComponent<Image>();
     }
 
+    public bool CheckForSale()
+    {
+        if (itemSlot.item == null) { return false; }
+        if (itemSlot.item.canBeSold == false) { return false; }
+
+        return true;
+    }
+
     private void Update()
     {
         if (itemIcon.activeInHierarchy == true)
@@ -102,7 +110,7 @@ public class ItemDragAndDropController : MonoBehaviour
         UpdateIcon();
     }
 
-    private void UpdateIcon()
+    public void UpdateIcon()
     {
         if (itemSlot.item == null)
         {

@@ -20,7 +20,9 @@ MonoBehaviour:
   onTileMapAction: {fileID: 0}
   onItemUsed: {fileID: 0}
   crop: {fileID: 0}
-  iconHighlight: 0
+  iconHighlight: 1
   itemPrefab: {fileID: 0}
   isWeapon: 1
   damage: 10
+  price: 100
+  canBeSold: 1
